@@ -9,11 +9,6 @@
 # and make the variables
 ############################
 
-#Download and unzip reference genome
-rsync -avzP rsync://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz $PWD
-unpigz hg19.fa.gz;
-echo "LOG: reference dataset successfully downloaded and extracted"
-
 mkdir -p $PWD/gemini/tools/
 mkdir-p $PWD/gemini/data/
 # Setup the variables in the script
@@ -29,7 +24,7 @@ data=$pwd/gemini/data/
 # install the necessary packagages
 conda create -n uma -c bioconda vt snpeff pigz
 conda activate uma
-#GEMINI
+# GEMINI
 wget https://github.com/arq5x/gemini/raw/master/gemini/scripts/gemini_install.py
 python gemini_install.py $tools $data
 PATH=$tools/bin:$data/anaconda/bin:$PATH
@@ -38,6 +33,10 @@ PATH=$tools/bin:$data/anaconda/bin:$PATH
 pigz -k -v $VCF.vcf>$VCF.vcf.gz
 tabix -p vcf $VCF.vcf.gz
 
+#Download and unzip reference genome
+rsync -avzP rsync://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/hg19.fa.gz $PWD
+unpigz hg19.fa.gz;
+echo "LOG: reference dataset successfully downloaded and extracted"
 
 ############################
 # STEP 1 : vt Pre-processing
