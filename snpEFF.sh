@@ -10,7 +10,7 @@
 ############################
 
 mkdir -p $PWD/gemini/tools/
-mkdir-p $PWD/gemini/data/
+mkdir -p $PWD/gemini/data/
 # Setup the variables in the script
 VCF=$PWD/uma_example
 REF=$PWD/hg19.fa
@@ -22,15 +22,15 @@ data=$pwd/gemini/data/
 #Preferred Conda based install
 ############################
 # install the necessary packagages
-conda create -n uma -c bioconda vt snpeff pigz
+conda create -n uma -c bioconda -y vt snpeff pigz
 conda activate uma
-# GEMINI
-wget https://github.com/arq5x/gemini/raw/master/gemini/scripts/gemini_install.py
-python gemini_install.py $tools $data
-PATH=$tools/bin:$data/anaconda/bin:$PATH
+# # GEMINI
+# wget https://github.com/arq5x/gemini/raw/master/gemini/scripts/gemini_install.py
+# python gemini_install.py $tools $data
+# PATH=$tools/bin:$data/anaconda/bin:$PATH
 
 # compress and index the vcf file
-pigz -k -v $VCF.vcf>$VCF.vcf.gz
+pigz -k -v $VCF.vcf
 tabix -p vcf $VCF.vcf.gz
 
 #Download and unzip reference genome
@@ -83,7 +83,7 @@ echo "LOG: snpEff annotation complete"
 # hg19 \
 # $VCF.norm.vcf.gz >$VCF.ann.vcf.gz
 
-rm -rf ./snpEff
+rm -rf PWD/snpEff
 
 ############################
 # STEP 3 : GEMINI 
