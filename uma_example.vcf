@@ -1,9 +1,15 @@
-##INFO=<ID=TY,Number=1,Type=String,Description="Type">
-##INFO=<ID=AF,Number=A,Type=Float,Description="Allele Frequency">
-##INFO=<ID=VC,Number=1,Type=Integer,Description="VCF Position">
-##INFO=<ID=VF,Number=1,Type=String,Description="VCF Variant">
-##INFO=<ID=SB,Number=A,Type=Float,Description="Strand Bias">
-#CHROM	POS	ID	REF	ALT	QUAL	PASS	INFO
+##fileformat=VCFv4.0							
+"##FILTER=<ID=PASS,Description=""All filters passed"">"							
+##fileDate=20201120							
+##source=myImputationProgramV3.1							
+##reference=1000GenomesPilot-NCBI36							
+##phasing=partial							
+"##INFO=<ID=TY,Number=1,Type=String,Description=""Type"">"							
+"##INFO=<ID=AF,Number=A,Type=Float,Description=""Allele Frequency"">"							
+"##INFO=<ID=VC,Number=1,Type=Integer,Description=""VCF Position"">"							
+"##INFO=<ID=VF,Number=1,Type=String,Description=""VCF Variant"">"							
+"##INFO=<ID=SB,Number=A,Type=Float,Description=""Strand Bias"">"							
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
 chr1	21889785	.	G	CG	21.58235804	PASS	TY=DEL;AF=54.3478;VC=21889784;VF=C;SB=0.604501073
 chr1	25889343	.	AG	CAG	31.55138586	PASS	TY=DEL;AF=100;VC=25889342;VF=C;SB=0.553921569
 chr1	63870296	.	ACTG	TACTG	21.03591651	PASS	TY=DEL;AF=45.7317;VC=63870295;VF=T;SB=0.506774279
