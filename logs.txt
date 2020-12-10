@@ -1,0 +1,300 @@
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ bgzip -c $VCF.vcf>$VCF.vcf.gz
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ tabix -p vcf $VCF.vcf.gz
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ #A) Decomposing
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ #this step takes multiallelic variants and expands them into distinct variant records;
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ # one record for each REF/ALT combination.
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ vt decompose \
+> -s \
+> -o $VCF.decompose.vcf.gz \
+> $VCF.vcf.gz
+decompose v0.5
+
+options:     input VCF file        /media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/uma_example.vcf.gz
+         [s] smart decomposition   true (experimental)
+	          [o] output VCF file       /media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/uma_example.decompose.vcf.gz
+
+
+stats: no. variants                 : 107
+       no. biallelic variants       : 107
+              no. multiallelic variants    : 0
+
+       no. additional biallelics    : 0
+              total no. of biallelics      : 107
+
+Time elapsed: 0.01s
+
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ echo "LOG: vt decomposition complete"
+LOG: vt decomposition complete
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ #B) Normalization
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ vt normalize \
+> -r $REF \
+> -o $VCF.norm.vcf.gz \
+> $VCF.decompose.vcf.gz
+normalize v0.5
+
+options:     input VCF file                                  /media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/uma_example.decompose.vcf.gz
+         [o] output VCF file                                 /media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/uma_example.norm.vcf.gz
+	          [w] sorting window size                             10000
+		           [n] no fail on reference inconsistency for non SNPs false
+			            [q] quiet                                           false
+				             [d] debug                                           false
+					              [r] reference FASTA file                            /media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/hg19.fa
+
+[fai_load] build FASTA index.
+
+stats: biallelic
+          no. left trimmed                      : 0
+	            no. right trimmed                     : 0
+		              no. left and right trimmed            : 0
+			                no. right trimmed and left aligned    : 42
+					          no. left aligned                      : 39
+
+       total no. biallelic normalized           : 81
+
+       multiallelic
+                 no. left trimmed                      : 0
+		           no. right trimmed                     : 0
+			             no. left and right trimmed            : 0
+				               no. right trimmed and left aligned    : 0
+					                 no. left aligned                      : 0
+
+       total no. multiallelic normalized        : 0
+
+       total no. variants normalized            : 81
+              total no. variants observed              : 81
+	             total no. reference observed             : 26
+
+Time elapsed: 9.59s
+
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ echo "LOG: vt normalization complete"
+LOG: vt normalization complete
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ ############################
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ # STEP 2 : snpEff Annotation
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ # Objective : Use snpEff to Annotate the normalized vcf
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ ############################
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ #Annotate using SnpEff
+(uma) jochum00@aagaardlab1:/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani$ java -Xmx8g -jar $PWD/snpEff/snpEff.jar \
+> -v \
+> -stats uma_example.html \
+> hg19 \
+> $VCF.norm.vcf.gz >$VCF.ann.vcf.gz
+00:00:00        SnpEff version SnpEff 5.0 (build 2020-10-04 16:02), by Pablo Cingolani
+00:00:00        Command: 'ann'
+00:00:00        Reading configuration file 'snpEff.config'. Genome: 'hg19'
+00:00:00        Reading config file: /media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff.config
+00:00:00        Reading config file: /media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/snpEff.config
+00:00:00        done
+00:00:00        Reading database for genome version 'hg19' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/snpEffectPredictor.bin' (this might take a while)
+00:00:15        done
+00:00:15        Loading Motifs and PWMs
+00:00:15        Building interval forest
+00:00:17        done.
+00:00:17        Genome stats :
+#-----------------------------------------------
+# Genome name                : 'Homo_sapiens (UCSC)'
+# Genome version             : 'hg19'
+# Genome ID                  : 'hg19[0]'
+# Has protein coding info    : true
+# Has Tr. Support Level info : true
+# Genes                      : 31178
+# Protein coding genes       : 21026
+#-----------------------------------------------
+# Transcripts                : 75682
+# Avg. transcripts per gene  : 2.43
+# TSL transcripts            : 0
+#-----------------------------------------------
+# Checked transcripts        :
+#               AA sequences :      0 ( 0.00% )
+#              DNA sequences :  67041 ( 88.58% )
+#-----------------------------------------------
+# Protein coding transcripts : 57196
+#              Length errors :    115 ( 0.20% )
+#  STOP codons in CDS errors :    100 ( 0.17% )
+#         START codon errors :    136 ( 0.24% )
+#        STOP codon warnings :     21 ( 0.04% )
+#              UTR sequences :  56632 ( 74.83% )
+#               Total Errors :    298 ( 0.52% )
+#-----------------------------------------------
+# Cds                        : 586628
+# Exons                      : 749642
+# Exons with sequence        : 749642
+# Exons without sequence     : 0
+# Avg. exons per transcript  : 9.91
+#-----------------------------------------------
+# Number of chromosomes      : 94
+# Chromosomes                : Format 'chromo_name size codon_table'
+#               '1'     249250621       Standard
+#               '2'     243199373       Standard
+#               '3'     198022430       Standard
+#               '4'     191154276       Standard
+#               '5'     180915260       Standard
+#               '6'     171115067       Standard
+#               '7'     159138663       Standard
+#               'X'     155270560       Standard
+#               '8'     146364022       Standard
+#               '9'     141213431       Standard
+#               '10'    135534747       Standard
+#               '11'    135006516       Standard
+#               '12'    133851895       Standard
+#               '13'    115169878       Standard
+#               '14'    107349540       Standard
+#               '15'    102531392       Standard
+#               '16'    90354753        Standard
+#               '17'    81195210        Standard
+#               '18'    78077248        Standard
+#               '20'    63025520        Standard
+#               'Y'     59373566        Standard
+#               '19'    59128983        Standard
+#               '22'    51304566        Standard
+#               '21'    48129895        Standard
+#               '6_ssto_hap7'   4928567 Standard
+#               '6_mcf_hap5'    4833398 Standard
+#               '6_cox_hap2'    4795371 Standard
+#               '6_mann_hap4'   4683263 Standard
+#               '6_apd_hap1'    4622290 Standard
+#               '6_qbl_hap6'    4611984 Standard
+#               '6_dbb_hap3'    4610396 Standard
+#               '17_ctg5_hap1'  1680828 Standard
+#               '4_ctg9_hap1'   590426  Standard
+#               '1_gl000192_random'     547496  Standard
+#               'Un_gl000225'   211173  Standard
+#               '4_gl000194_random'     191469  Standard
+#               '4_gl000193_random'     189789  Standard
+#               '9_gl000200_random'     187035  Standard
+#               'Un_gl000222'   186861  Standard
+#               'Un_gl000212'   186858  Standard
+#               '7_gl000195_random'     182896  Standard
+#               'Un_gl000223'   180455  Standard
+#               'Un_gl000224'   179693  Standard
+#               'Un_gl000219'   179198  Standard
+#               '17_gl000205_random'    174588  Standard
+#               'Un_gl000215'   172545  Standard
+#               'Un_gl000216'   172294  Standard
+#               'Un_gl000217'   172149  Standard
+#               '9_gl000199_random'     169874  Standard
+#               'Un_gl000211'   166566  Standard
+#               'Un_gl000213'   164239  Standard
+#               'Un_gl000220'   161802  Standard
+#               'Un_gl000218'   161147  Standard
+#               '19_gl000209_random'    159169  Standard
+#               'Un_gl000221'   155397  Standard
+#               'Un_gl000214'   137718  Standard
+#               'Un_gl000228'   129120  Standard
+#               'Un_gl000227'   128374  Standard
+#               '1_gl000191_random'     106433  Standard
+#               '19_gl000208_random'    92689   Standard
+#               '9_gl000198_random'     90085   Standard
+#               '17_gl000204_random'    81310   Standard
+#               'Un_gl000233'   45941   Standard
+#               'Un_gl000237'   45867   Standard
+#               'Un_gl000230'   43691   Standard
+#               'Un_gl000242'   43523   Standard
+#               'Un_gl000243'   43341   Standard
+#               'Un_gl000241'   42152   Standard
+#               'Un_gl000236'   41934   Standard
+#               'Un_gl000240'   41933   Standard
+#               '17_gl000206_random'    41001   Standard
+#               'Un_gl000232'   40652   Standard
+#               'Un_gl000234'   40531   Standard
+#               '11_gl000202_random'    40103   Standard
+#               'Un_gl000238'   39939   Standard
+#               'Un_gl000244'   39929   Standard
+#               'Un_gl000248'   39786   Standard
+#               '8_gl000196_random'     38914   Standard
+#               'Un_gl000249'   38502   Standard
+#               'Un_gl000246'   38154   Standard
+#               '17_gl000203_random'    37498   Standard
+#               '8_gl000197_random'     37175   Standard
+#               'Un_gl000245'   36651   Standard
+#               'Un_gl000247'   36422   Standard
+#               '9_gl000201_random'     36148   Standard
+#               'Un_gl000235'   34474   Standard
+#               'Un_gl000239'   33824   Standard
+#               '21_gl000210_random'    27682   Standard
+#               'Un_gl000231'   27386   Standard
+#               'Un_gl000229'   19913   Standard
+#               'M'     16571   Vertebrate_Mitochondrial
+#               'Un_gl000226'   15008   Standard
+#               '18_gl000207_random'    4262    Standard
+#               'MT'    1       Vertebrate_Mitochondrial
+#-----------------------------------------------
+
+00:00:22        Predicting variants
+00:00:22        Loading sequences for chromosome '1' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.1.bin'
+00:00:26        Building sequence tree for chromosome '1'
+00:00:26        Done. Loaded 2112 sequences.
+00:00:26        Loading sequences for chromosome '10' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.10.bin'
+00:00:28        Building sequence tree for chromosome '10'
+00:00:28        Done. Loaded 842 sequences.
+00:00:28        Loading sequences for chromosome '11' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.11.bin'
+00:00:30        Building sequence tree for chromosome '11'
+00:00:30        Done. Loaded 1299 sequences.
+00:00:30        Loading sequences for chromosome '12' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.12.bin'
+00:00:31        Building sequence tree for chromosome '12'
+00:00:31        Done. Loaded 1087 sequences.
+00:00:31        Loading sequences for chromosome '14' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.14.bin'
+00:00:33        Building sequence tree for chromosome '14'
+00:00:33        Done. Loaded 693 sequences.
+00:00:33        Loading sequences for chromosome '15' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.15.bin'
+00:00:34        Building sequence tree for chromosome '15'
+00:00:34        Done. Loaded 677 sequences.
+00:00:34        Loading sequences for chromosome '16' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.16.bin'
+00:00:35        Building sequence tree for chromosome '16'
+00:00:35        Done. Loaded 898 sequences.
+00:00:35        Loading sequences for chromosome '17' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.17.bin'
+00:00:36        Building sequence tree for chromosome '17'
+00:00:36        Done. Loaded 1161 sequences.
+00:00:36        Loading sequences for chromosome '19' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.19.bin'
+00:00:37        Building sequence tree for chromosome '19'
+00:00:37        Done. Loaded 1474 sequences.
+00:00:37        Loading sequences for chromosome '2' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.2.bin'
+00:00:40        Building sequence tree for chromosome '2'
+00:00:40        Done. Loaded 1390 sequences.
+00:00:40        Loading sequences for chromosome '20' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.20.bin'
+00:00:41        Building sequence tree for chromosome '20'
+00:00:41        Done. Loaded 566 sequences.
+00:00:41        Loading sequences for chromosome '21' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.21.bin'
+00:00:42        Building sequence tree for chromosome '21'
+00:00:42        Done. Loaded 288 sequences.
+00:00:42        Loading sequences for chromosome '3' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.3.bin'
+00:00:44        Building sequence tree for chromosome '3'
+00:00:44        Done. Loaded 1125 sequences.
+00:00:44        Loading sequences for chromosome '4' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.4.bin'
+00:00:46        Building sequence tree for chromosome '4'
+00:00:46        Done. Loaded 896 sequences.
+00:00:46        Loading sequences for chromosome '5' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.5.bin'
+00:00:49        Building sequence tree for chromosome '5'
+00:00:49        Done. Loaded 1002 sequences.
+00:00:49        Loading sequences for chromosome '6' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.6.bin'
+00:00:51        Building sequence tree for chromosome '6'
+00:00:51        Done. Loaded 1124 sequences.
+00:00:51        Loading sequences for chromosome '7' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.7.bin'
+00:00:53        Building sequence tree for chromosome '7'
+00:00:53        Done. Loaded 990 sequences.
+00:00:53        Loading sequences for chromosome '8' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.8.bin'
+00:00:55        Building sequence tree for chromosome '8'
+00:00:55        Done. Loaded 822 sequences.
+00:00:55        Loading sequences for chromosome '9' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.9.bin'
+00:00:57        Building sequence tree for chromosome '9'
+00:00:57        Done. Loaded 877 sequences.
+00:00:57        Loading sequences for chromosome 'X' from file '/media/jochum00/Aagaard_Raid3/michael_files/Rani_Perasani/snpEff/./data/hg19/sequence.X.bin'
+00:00:58        Building sequence tree for chromosome 'X'
+00:00:58        Done. Loaded 922 sequences.
+
+WARNINGS: Some warning were detected
+Warning type    Number of warnings
+INFO_REALIGN_3_PRIME    102
+
+
+00:00:58        Creating summary file: uma_example.html
+00:00:59        Creating genes file: ./uma_example.genes.txt
+00:00:59        done.
+00:00:59        Logging
+00:01:00        Checking for updates...
+00:01:01        Done.

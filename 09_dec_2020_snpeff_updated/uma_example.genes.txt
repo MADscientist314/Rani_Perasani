@@ -1,0 +1,336 @@
+# The following table is formatted as tab separated values. 
+#GeneName	GeneId	TranscriptId	BioType	variants_impact_HIGH	variants_impact_LOW	variants_impact_MODERATE	variants_impact_MODIFIER	variants_effect_3_prime_UTR_variant	variants_effect_5_prime_UTR_variant	variants_effect_conservative_inframe_insertion	variants_effect_downstream_gene_variant	variants_effect_frameshift_variant	variants_effect_intron_variant	variants_effect_missense_variant	variants_effect_non_coding_transcript_exon_variant	variants_effect_splice_acceptor_variant	variants_effect_splice_donor_variant	variants_effect_splice_region_variant	variants_effect_upstream_gene_variant
+ABCA12	ABCA12	NM_015657.3	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+ABCA12	ABCA12	NM_173076.3	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+ABCA12	ABCA12	NR_103740.2		0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+ABCA4	ABCA4	NM_000350.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ABCB4	ABCB4	NM_000443.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ABCB4	ABCB4	NM_018849.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ABCB4	ABCB4	NM_018850.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADM	ACADM	NM_000016.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADM	ACADM	NM_001127328.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADM	ACADM	NM_001286042.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADM	ACADM	NM_001286043.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADM	ACADM	NM_001286044.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADVL	ACADVL	NM_000018.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADVL	ACADVL	NM_001033859.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADVL	ACADVL	NM_001270447.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACADVL	ACADVL	NM_001270448.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACSF3	ACSF3	NM_001127214.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACSF3	ACSF3	NM_001243279.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACSF3	ACSF3	NM_001284316.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACSF3	ACSF3	NM_174917.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACSF3	ACSF3	NR_104293.2		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACSF3	ACSF3	NR_147928.2		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ACSF3	ACSF3	NR_147929.2		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ALG6	ALG6	NM_013339.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ALPL	ALPL	NM_000478.6	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+ALPL	ALPL	NM_001127501.4	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+ALPL	ALPL	NM_001177520.3	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+ALPL	ALPL	NM_001369803.2	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+ALPL	ALPL	NM_001369804.2	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+ALPL	ALPL	NM_001369805.2	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+ATM	ATM	NM_000051.3	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+ATM	ATM	NM_001351834.2	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+ATP6V1B1	ATP6V1B1	NM_001692.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ATP7A	ATP7A	NM_000052.7	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ATP7A	ATP7A	NM_001282224.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ATP7A	ATP7A	NR_104109.2		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ATRIP	ATRIP	NM_001271022.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+ATRIP	ATRIP	NM_001271023.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+ATRIP	ATRIP	NM_032166.4	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+ATRIP	ATRIP	NM_130384.3	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+ATRIP-TREX1	ATRIP-TREX1	NR_153405.1		0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0
+ATRX	ATRX	NM_000489.5	protein_coding	0	0	1	1	0	0	1	0	0	1	1	0	0	0	0	0
+ATRX	ATRX	NM_138270.4	protein_coding	0	0	1	1	0	0	1	0	0	1	1	0	0	0	0	0
+BBS9	BBS9	NM_001348041.4	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+BBS9	BBS9	NM_001362679.1	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+BCKDHB	BCKDHB	NM_000056.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+BCKDHB	BCKDHB	NM_001318975.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+BCKDHB	BCKDHB	NM_183050.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+BCKDHB	BCKDHB	NR_134945.2		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+C11orf65	C11orf65	NM_001330368.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+C11orf65	C11orf65	NM_001351110.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CASKIN2	CASKIN2	NM_020753.5	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+CEP290	CEP290	NM_025114.4	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+CFTR	CFTR	NM_000492.4	protein_coding	0	0	0	4	0	0	0	0	0	4	0	0	0	0	0	0
+CFTR-AS1	CFTR-AS1	NR_149084.1		0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+CHRNG	CHRNG	NM_005199.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+COL11A2	COL11A2.7	NM_080679.2.4	protein_coding	0	0	0	3	0	0	0	0	0	3	0	0	0	0	0	0
+COL11A2	COL11A2.7	NM_080680.3.3	protein_coding	0	0	0	3	0	0	0	0	0	3	0	0	0	0	0	0
+COL11A2	COL11A2.7	NM_080681.3.4	protein_coding	0	0	0	3	0	0	0	0	0	3	0	0	0	0	0	0
+COL4A4	COL4A4	NM_000092.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CPSF1	CPSF1	NM_013291.3	protein_coding	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	2
+CTSD	CTSD	NM_001909.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_000103.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347248.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347249.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347250.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347251.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347252.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347253.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347254.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347255.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_001347256.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+CYP19A1	CYP19A1	NM_031226.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DHCR7	DHCR7	NM_001163817.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+DHCR7	DHCR7	NM_001360.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+DLG4	DLG4	NM_001128827.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+DLG4	DLG4	NM_001321074.1	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+DLG4	DLG4	NM_001321075.2	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+DLG4	DLG4	NM_001365.4	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+DLG4	DLG4	NR_135527.1		0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+DNAH5	DNAH5	NM_001369.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DNAI1	DNAI1	NM_001281428.1	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+DNAI1	DNAI1	NM_012144.4	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+DNAI2	DNAI2	NM_001172810.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DNAI2	DNAI2	NM_001353167.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DNAI2	DNAI2	NM_023036.6	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DNAI2	DNAI2	NR_148379.2		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DOK7	DOK7	NM_001164673.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DOK7	DOK7	NM_001256896.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DOK7	DOK7	NM_001301071.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DOK7	DOK7	NM_001363811.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DOK7	DOK7	NM_173660.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+DPYD	DPYD	NM_000110.4	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+DPYD	DPYD	NM_001160301.1	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+DVL2	DVL2	NM_004422.3	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+EDA	EDA	NM_001005609.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+EDA	EDA	NM_001005612.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+EDA	EDA	NM_001399.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+EIF2AK3	EIF2AK3	NM_001313915.1	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+EIF2AK3	EIF2AK3	NM_004836.7	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+EIF2AK3-DT	EIF2AK3-DT	NR_135540.1		0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+ETFA	ETFA	NM_000126.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+ETFA	ETFA	NM_001127716.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+EVC2	EVC2	NM_001166136.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+EVC2	EVC2	NM_147127.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+F2	F2	NM_000506.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+F2	F2	NM_001311257.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+FAH	FAH	NM_000137.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+FAH	FAH	NM_001374377.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+FAH	FAH	NM_001374380.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+G6PD	G6PD	NM_000402.4	protein_coding	1	0	0	1	0	0	0	0	1	1	1	0	0	0	0	0
+G6PD	G6PD	NM_001042351.3	protein_coding	1	0	0	1	0	0	0	0	1	1	1	0	0	0	0	0
+G6PD	G6PD	NM_001360016.2	protein_coding	1	0	0	1	0	0	0	0	1	1	1	0	0	0	0	0
+GALK1	GALK1	NM_000154.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+GBAP1	GBAP1	NR_002188.3		0	0	0	3	0	0	0	0	0	0	0	3	0	0	0	0
+GDF5	GDF5	NM_000557.5	protein_coding	2	0	0	2	0	1	0	0	2	1	2	0	0	0	0	0
+GDF5	GDF5	NM_001319138.2	protein_coding	2	0	0	2	0	1	0	0	2	1	2	0	0	0	0	0
+GDF5OS	GDF5OS	NR_161326.1		0	0	0	4	0	0	0	2	0	0	0	2	0	0	0	0
+GLE1	GLE1	NM_001003722.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+GLE1	GLE1	NM_001499.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+HLCS	HLCS	NM_000411.8	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NM_001242784.3	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NM_001242785.2	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NM_001352514.2	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NM_001352515.2	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NM_001352516.2	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NM_001352517.1	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NM_001352518.1	protein_coding	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NR_148020.2		0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+HLCS	HLCS	NR_148021.1		0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0
+IFITM10	IFITM10	NM_001170820.4	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+ITPA	ITPA	NM_001324240.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+IVD	IVD	NM_001159508.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+IVD	IVD	NM_001354597.3	protein_coding	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0
+IVD	IVD	NM_001354598.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+IVD	IVD	NM_001354599.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+IVD	IVD	NM_001354600.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+IVD	IVD	NM_001354601.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+IVD	IVD	NM_002225.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+IVD	IVD	NR_148925.2		0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0
+LAMA2	LAMA2	NM_000426.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LAMA2	LAMA2	NM_001079823.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LDLRAP1	LDLRAP1	NM_015627.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LIFR	LIFR	NM_001127671.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LIFR	LIFR	NM_001364297.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LIFR	LIFR	NM_001364298.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LIFR	LIFR	NM_002310.6	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LOC102723833	LOC102723833	NR_125992.1		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+LOC102723833	LOC102723833	NR_125993.1		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+MIR1268A	MIR1268A.4	NR_031672.1.4		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+MIR324	MIR324	NR_029896.1		0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+MIR4713HG	MIR4713HG	NR_146310.1		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+MTX1	MTX1	NM_002455.4	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+MTX1	MTX1	NM_198883.3	protein_coding	0	0	0	3	0	0	0	3	0	0	0	0	0	0	0	0
+MYO7A	MYO7A	NM_000260.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+MYO7A	MYO7A	NM_001127180.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+MYO7A	MYO7A	NM_001369365.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NDUFS6	NDUFS6	NM_004553.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NEB	NEB	NM_001164507.1	protein_coding	0	1	0	3	0	0	0	0	0	4	0	0	0	0	1	0
+NEB	NEB	NM_001164508.1	protein_coding	0	1	0	3	0	0	0	0	0	4	0	0	0	0	1	0
+NEB	NEB	NM_001271208.2	protein_coding	0	1	0	3	0	0	0	0	0	4	0	0	0	0	1	0
+NEB	NEB	NM_004543.5	protein_coding	0	1	0	3	0	0	0	0	0	4	0	0	0	0	1	0
+NLRP7	NLRP7	NM_001127255.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NLRP7	NLRP7	NM_139176.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NLRP7	NLRP7	NM_206828.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NPHP1	NPHP1	NM_000272.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NPHP1	NPHP1	NM_001128178.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NPHP1	NPHP1	NM_001128179.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NPHP1	NPHP1	NM_001374256.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NPHP1	NPHP1	NM_001374257.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+NPHP1	NPHP1	NM_207181.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142763.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142764.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142765.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142766.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142767.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142768.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142769.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142770.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142771.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142772.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001142773.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001354404.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001354411.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001354420.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001354429.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_001354430.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PCDH15	PCDH15	NM_033056.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PDHB	PDHB	NM_000925.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PDHB	PDHB	NM_001173468.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PDHB	PDHB	NM_001315536.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PDHB	PDHB	NR_033384.1		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PHGDH	PHGDH	NM_006623.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+PREPL	PREPL	NM_001042385.2	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001042386.2	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001171603.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001171606.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001171613.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001171617.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001374275.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001374276.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_001374277.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PREPL	PREPL	NM_006036.4	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+PXK	PXK	NM_001289095.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001289096.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001289098.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001289099.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001289100.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001289101.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349488.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349489.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349490.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349491.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349492.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349493.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349494.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349495.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349496.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349497.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349498.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349499.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349500.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349501.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349502.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349503.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349504.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349506.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349507.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349508.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349509.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349510.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349511.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349512.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349513.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349514.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349515.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349516.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349517.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349518.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349519.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349520.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349521.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349522.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349524.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349525.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349526.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349527.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349528.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349529.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349530.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349531.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349532.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349533.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349534.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349535.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349536.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349537.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349538.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349539.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_001349540.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NM_017771.5	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NR_146193.1		0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+PXK	PXK	NR_146194.1		0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+RAPSN	RAPSN	NM_005055.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+RAPSN	RAPSN	NM_032645.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+RTEL1	RTEL1	NM_001283009.2	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+RTEL1	RTEL1	NM_001283010.1	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+RTEL1	RTEL1	NM_016434.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+RTEL1	RTEL1	NM_032957.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+RTEL1-TNFRSF6B	RTEL1-TNFRSF6B	NR_037882.1		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+SBDSP1	SBDSP1	NR_001588.2		0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0
+SBDSP1	SBDSP1	NR_024109.1		0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0
+SBDSP1	SBDSP1	NR_024110.1		0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0
+SBDSP1	SBDSP1	NR_024111.1		0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0
+SHISA5	SHISA5	NM_001272065.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+SHISA5	SHISA5	NM_001272066.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+SHISA5	SHISA5	NM_001272067.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+SHISA5	SHISA5	NM_001272068.1	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+SHISA5	SHISA5	NM_001272082.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+SHISA5	SHISA5	NM_001272083.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+SHISA5	SHISA5	NM_016479.4	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+SLC37A4	SLC37A4	NM_001164277.1	protein_coding	1	0	0	0	0	0	0	0	0	1	0	0	1	1	0	0
+SLC37A4	SLC37A4	NM_001164278.2	protein_coding	1	0	0	0	0	0	0	0	0	1	0	0	1	1	0	0
+SLC37A4	SLC37A4	NM_001164279.2	protein_coding	1	0	0	0	0	0	0	0	0	1	0	0	1	1	0	0
+SLC37A4	SLC37A4	NM_001164280.2	protein_coding	1	0	0	0	0	0	0	0	0	1	0	0	1	1	0	0
+SLC37A4	SLC37A4	NM_001467.6	protein_coding	1	0	0	0	0	0	0	0	0	1	0	0	1	1	0	0
+SLC39A4	SLC39A4	NM_001280557.2	protein_coding	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	3
+SLC39A4	SLC39A4	NM_017767.3	protein_coding	2	0	0	1	0	0	0	0	2	1	2	0	0	0	1	0
+SLC39A4	SLC39A4	NM_130849.4	protein_coding	2	0	0	1	0	0	0	0	2	1	2	0	0	0	1	0
+SLC45A2	SLC45A2	NM_001012509.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+SLC45A2	SLC45A2	NM_001297417.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+SLC45A2	SLC45A2	NM_016180.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+SLC4A11	SLC4A11	NM_001174089.2	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+SLC4A11	SLC4A11	NM_001174090.1	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+SLC4A11	SLC4A11	NM_001363745.2	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+SLC4A11	SLC4A11	NM_032034.3	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+SLC4A11	SLC4A11	NR_135000.1		0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+SMN1	SMN1.2	NM_000344.3.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+SMN1	SMN1.2	NM_001297715.1.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+SMN1	SMN1.2	NM_022874.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+SMN2	SMN2.2	NM_017411.4.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+SMN2	SMN2.2	NM_022875.3.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+SMN2	SMN2.2	NM_022876.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+SMN2	SMN2.2	NM_022877.2.2	protein_coding	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+SNHG31	SNHG31	NR_110292.1		0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+STAR	STAR	NM_000349.3	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+SUCLA2	SUCLA2	NM_003850.2	protein_coding	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0
+TIGD1	TIGD1	NM_145702.3	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TRAPPC4	TRAPPC4	NM_001318486.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TRAPPC4	TRAPPC4	NM_001318488.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TRAPPC4	TRAPPC4	NM_001318489.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TRAPPC4	TRAPPC4	NM_001318490.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TRAPPC4	TRAPPC4	NM_001318492.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TRAPPC4	TRAPPC4	NM_001318494.2	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TRAPPC4	TRAPPC4	NM_016146.6	protein_coding	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0
+TREX1	TREX1	NM_007248.5	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+TREX1	TREX1	NM_033629.6	protein_coding	1	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0
+TSEN54	TSEN54	NM_207346.3	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+TTN	TTN	NM_001256850.1	protein_coding	1	0	0	2	0	0	0	0	1	2	1	0	0	0	0	0
+TTN	TTN	NM_001267550.2	protein_coding	1	0	0	2	0	0	0	0	1	2	1	0	0	0	0	0
+TTN	TTN	NM_003319.4	protein_coding	0	0	0	3	0	0	0	0	0	3	0	0	0	0	0	0
+TTN	TTN	NM_133378.4	protein_coding	1	0	0	2	0	0	0	0	1	2	1	0	0	0	0	0
+TTN	TTN	NM_133379.5	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+TTN	TTN	NM_133432.3	protein_coding	0	0	0	3	0	0	0	0	0	3	0	0	0	0	0	0
+TTN	TTN	NM_133437.4	protein_coding	0	0	0	3	0	0	0	0	0	3	0	0	0	0	0	0
+TTN-AS1	TTN-AS1	NR_038271.1		0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
+TYW1B	TYW1B	NM_001145440.3	protein_coding	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1
+USH1C	USH1C	NM_001297764.2	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+USH1C	USH1C	NM_005709.4	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+USH1C	USH1C	NM_153676.4	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+USH1C	USH1C	NR_123738.2		0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+USH2A	USH2A	NM_206933.3	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+WRN	WRN	NM_000553.6	protein_coding	0	0	0	2	0	0	0	0	0	2	0	0	0	0	0	0
+ZFYVE26	ZFYVE26	NM_015346.4	protein_coding	0	0	0	1	0	0	0	0	0	1	0	0	0	0	0	0
