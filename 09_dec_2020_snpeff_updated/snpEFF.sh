@@ -52,6 +52,7 @@ echo "LOG: vt decomposition complete"
 
 #B) Normalization
 vt normalize \
+#   -n \
    -r $REF \
    -o $VCF.norm.vcf.gz \
    $VCF.decompose.vcf.gz
