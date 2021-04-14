@@ -1,4 +1,0 @@
-install.packages("remotes")
-remotes::install_github("AndersenLab/cegwas")
-devtools::install_github("AndersenLab/cegwas")
-library()
