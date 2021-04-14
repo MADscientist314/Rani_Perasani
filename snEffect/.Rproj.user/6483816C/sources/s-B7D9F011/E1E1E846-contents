@@ -1,0 +1,37 @@
+#load our library
+library(BSgenome.Hsapiens.UCSC.hg19)
+#import the report
+uma<-read.table(file = "uma_example.txt",header = T,sep="\t")
+#Rename the chr, position start and stop for ease 
+uma$chr<-uma$Chrom
+uma$start<-uma$Position -1
+uma$end<-uma$Position-1 
+
+#make a unique dataa frame that contains the values
+del<-uma%>%select(Chrom,start,end)
+
+#run the getSeq function to acquire the variant call
+# and place into a s4 object called variant
+variant_minus<-getSeq(x=BSgenome.Hsapiens.UCSC.hg19,
+                names=del$chr, 
+                start=del$start, 
+                end=del$end, strand="-") 
+variant_plus<-getSeq(x=BSgenome.Hsapiens.UCSC.hg19,
+                      names=del$chr, 
+                      start=del$start, 
+                      end=del$end, strand="-") 
+variant_minus
+#convert the s4 object to a dataframe
+variant<-data.frame(variant)
+
+#overwrite the existing column in the uma df with the variant call
+uma$Variant<-variant$variant
+
+library(dplyr)
+# Unite the columns ref and variant 
+Ref<-unite(data = uma,col = "Ref",Variant:Ref, sep = "")
+#overwrite the existing ref column in uma with the united column
+uma$Ref<-Ref$Ref
+#export this as a tsv file
+write.table(uma,"uma_variant_annotated.tsv",sep = "\t")
+uma

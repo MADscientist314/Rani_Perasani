@@ -1,0 +1,39 @@
+
+Rani Pamidi
+8:09 PM (0 minutes ago)
+to me
+
+library(BSgenome.Hsapiens.UCSC.hg19)
+getwd()
+setwd("D:/github/Rani_Perasani/snEffect/Rani_Perasani/")
+uma<-read.table(file = "uma_example.txt",header = T,sep="\t")
+uma$chr<-uma$Chrom
+uma$start<-uma$Position -1
+uma$end<-uma$Position-1
+library(dplyr)
+del<-uma%>%select(Chrom,Position)
+del$Position<-del$Position-1
+del
+variant<-getSeq(x=BSgenome.Hsapiens.UCSC.hg19,
+                names=del$Chrom,
+                start=del$Position,
+                end=del$Position)
+variant<-data.frame(variant)
+variant
+uma$Variant<-variant$variant
+uma$Variant
+library(tidyverse)
+Ref<-unite(data = uma,col = "Ref",Variant:Ref, sep = "")
+uma$Ref<-Ref$Ref
+uma$Ref
+write.table(uma,"uma_variant_annotated.tsv",sep = "\t")
+
+########################################################
+# Download using wget
+wget https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip
+
+# If you prefer to use 'curl' instead of 'wget', you can type:
+SNPeFF.zip<-curl::curl_download("https://snpeff.blob.core.windows.net/versions/snpEff_latest_core.zip")
+
+# Install
+$ unzip snpEff_latest_core.zip

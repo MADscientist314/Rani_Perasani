@@ -1,0 +1,18 @@
+﻿Strong,Warm,Warm,Sunny,Yes
+Weak,Warm,Warm,Sunny,No
+Strong,Warm,Warm,Cloudy,Yes
+Strong,Warm,Moderate,Rainy,Yes
+Strong,Cold,Cold,Rainy,No
+Weak,Cold,Cold,Rainy,No
+Weak,Cold,Cold,Sunny,No
+Strong,Warm,Moderate,Sunny,Yes
+Strong,Cold,Cold,Sunny,Yes
+Strong,Cold,Moderate,Rainy,No
+Weak,Cold,Moderate,Sunny,Yes
+Weak,Warm,Moderate,Sunny,Yes
+Strong,Cold,Warm,Sunny,Yes
+Weak,Warm,Moderate,Rainy,No
+
+Test Data
+Strong,Warm,Cold,Sunny,?
+Light,Cold,Warm,Rainy,?

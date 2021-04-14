@@ -1,0 +1,31 @@
+library(VariantAnnotation)
+library(cgdv17)
+library(org.Hs.eg.db)
+library(TxDb.Hsapiens.UCSC.hg19.knownGene)
+library(BSgenome.Hsapiens.UCSC.hg19)
+library(PolyPhen.Hsapiens.dbSNP131)
+setwd("d:/github/Rani_Perasani/snEffect/Rani_Perasani")
+vcf <- readVcf("uma_example.vcf.gz", "hg19")
+
+# Examine the header
+hdr <- scanVcfHeader("uma_example.vcf.gz")
+hdr
+meta(hdr)
+head(rowRanges(vcf), 3)
+#convert symbols to gene Ids
+## get entrez ids from gene symbols
+# genesym <- c("TRPV1", "TRPV2", "TRPV3")
+# geneid <- select(org.Hs.eg.db, keys=genesym, keytype="SYMBOL",
+#                  columns="ENTREZID")
+library(VariantAnnotation)
+
+#fl.vcf <- system.file("extdata", "17-1409-CEU-brca1.vcf.bgz", package="biovizBase")
+#vcf <- readVcf(fl.vcf, "hg19")
+vcf
+vr <- as(vcf[, 1:3], "VRanges")
+vr <- renameSeqlevels(vr, value = c("17" = "chr17"))
+## small region contains data
+gr17 <- GRanges("chr17", IRanges(41234400, 41234530))
+p.vr <- autoplot(vr, which = wh)
+## none geom
+p.vr
